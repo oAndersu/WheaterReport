@@ -1,0 +1,37 @@
+body{
+    background-color: #1a2a4a;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+}
+#Cidade {
+    border-radius: 10px;
+    width: 300px;
+    background-color: #223763;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    color: antiquewhite;
+}
+#Botaobs {
+    border-radius: 5px;
+    background-color: #D4A017;
+    border: none;
+    padding: 5px 15px;
+    width: 85px;
+    color: black;
+}
+#Botaobs:hover{
+    background-color: #edb119;
+    cursor: pointer;
+}
+#Resultado{
+    background-color: transparent;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+
+}

@@ -15,15 +15,16 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=' + cidade.value+ '&app
     //Data da api
     .then(function (data) {
         if (data.cod ==='404'){
+            result.style.backgroundColor = '#2a4375'
+
             result.innerHTML = '<p>Cidade Não encontrada!</p>'
             return
         }
+        result.style.backgroundColor = '#2a4375'
      result.innerHTML = `
       <h1>${data.name}</h1> 
       <p><strong>Temperatura:</strong> ${data.main.temp}°C</p>
       <p><strong>Clima:</strong> ${data.weather[0].description}</p>
       <p><strong>Umidade:</strong> ${data.main.humidity}%</p >`
     })
-
-
  })
